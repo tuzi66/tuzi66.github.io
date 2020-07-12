@@ -32,6 +32,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="repository" />
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -92,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594515738565</updated>
       <workItem from="1594515744658" duration="2877000" />
-      <workItem from="1594518644929" duration="11895000" />
+      <workItem from="1594518644929" duration="12783000" />
     </task>
     <task id="LOCAL-00001" summary="博客">
       <created>1594527737186</created>
@@ -108,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594530738062</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".">
+      <created>1594531145850</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594531145850</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,10 +168,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="395" y="95" key="#检查/0.0.1536.834@0.0.1536.834" timestamp="1594517828607" />
-    <state x="147" y="52" width="1228" height="695" key="DiffContextDialog" timestamp="1594529787731">
+    <state x="147" y="52" width="1228" height="695" key="DiffContextDialog" timestamp="1594532031801">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="147" y="52" width="1228" height="695" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1594529787731" />
+    <state x="147" y="52" width="1228" height="695" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1594532031801" />
     <state x="549" y="158" key="FileChooserDialogImpl" timestamp="1594527592383">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -188,14 +200,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1594518617457" />
-    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1594530662961">
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1594531234756">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1594530662961" />
-    <state x="582" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594529806353">
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1594531234756" />
+    <state x="582" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594531087169">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="582" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1594529806353" />
+    <state x="582" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1594531087169" />
     <state x="592" y="311" key="git4idea.ui.GitResetDialog" timestamp="1594529769560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
