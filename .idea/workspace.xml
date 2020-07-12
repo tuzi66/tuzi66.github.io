@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b477950e-be53-4f28-bc3a-6a166c34e8d1" name="默认的" comment="." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="hexo" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1eZ4NByo9jjsjG8KIdXUxvgDfQX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="module&#10;directory&#10;repository" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xiemei\source" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Gradle tasks" flag="true" />
+      <visibility group="Grunt tasks" flag="true" />
+      <visibility group="Gulp tasks" flag="true" />
+      <visibility group="Maven goals" flag="true" />
+      <visibility group="Node.js" flag="true" />
+      <visibility group="Recent projects" flag="true" />
+      <visibility group="Run configurations" flag="true" />
+      <visibility group="npm" flag="true" />
+      <visibility group="yarn" flag="true" />
+    </myKeys>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b477950e-be53-4f28-bc3a-6a166c34e8d1" name="默认的" comment="" />
+      <created>1594515738565</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594515738565</updated>
+      <workItem from="1594515744658" duration="2877000" />
+      <workItem from="1594518644929" duration="11895000" />
+    </task>
+    <task id="LOCAL-00001" summary="博客">
+      <created>1594527737186</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594527737186</updated>
+    </task>
+    <task id="LOCAL-00002" summary=".">
+      <created>1594530738062</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594530738062</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="博客" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="82" y="435" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594530612599">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="82" y="435" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1594530612599" />
+    <state x="588" y="107" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594528594491">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="588" y="107" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1536.834@0.0.1536.834" timestamp="1594528594491" />
+    <state x="395" y="95" key="#检查" timestamp="1594517828607">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="395" y="95" key="#检查/0.0.1536.834@0.0.1536.834" timestamp="1594517828607" />
+    <state x="147" y="52" width="1228" height="695" key="DiffContextDialog" timestamp="1594529787731">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="147" y="52" width="1228" height="695" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1594529787731" />
+    <state x="549" y="158" key="FileChooserDialogImpl" timestamp="1594527592383">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1594527592383" />
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1594518624961">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1594518624961" />
+    <state width="1493" height="214" key="GridCell.Tab.0.center" timestamp="1594518624961">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1594518624961" />
+    <state width="1493" height="214" key="GridCell.Tab.0.left" timestamp="1594518624961">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1594518624961" />
+    <state width="1493" height="214" key="GridCell.Tab.0.right" timestamp="1594518624961">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1594518624961" />
+    <state x="625" y="118" key="RollbackChangesDialog" timestamp="1594520796477">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="625" y="118" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1594520796477" />
+    <state x="270" y="61" key="SettingsEditor" timestamp="1594518617457">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1594518617457" />
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1594530662961">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1594530662961" />
+    <state x="582" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594529806353">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="582" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1594529806353" />
+    <state x="592" y="311" key="git4idea.ui.GitResetDialog" timestamp="1594529769560">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="592" y="311" key="git4idea.ui.GitResetDialog/0.0.1536.834@0.0.1536.834" timestamp="1594529769560" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1594519128641">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1594519128641" />
+  </component>
+</project>
