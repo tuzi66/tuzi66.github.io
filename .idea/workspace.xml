@@ -26,7 +26,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b477950e-be53-4f28-bc3a-6a166c34e8d1" name="默认的" comment="." />
+    <list default="true" id="b477950e-be53-4f28-bc3a-6a166c34e8d1" name="默认的" comment="三维文件">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/【转】三维文件格式知多少.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/【转】三维文件格式知多少.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,19 +76,6 @@
       <recent name="D:\xiemei\source" />
     </key>
   </component>
-  <component name="RunAnythingCache">
-    <myKeys>
-      <visibility group="Gradle tasks" flag="true" />
-      <visibility group="Grunt tasks" flag="true" />
-      <visibility group="Gulp tasks" flag="true" />
-      <visibility group="Maven goals" flag="true" />
-      <visibility group="Node.js" flag="true" />
-      <visibility group="Recent projects" flag="true" />
-      <visibility group="Run configurations" flag="true" />
-      <visibility group="npm" flag="true" />
-      <visibility group="yarn" flag="true" />
-    </myKeys>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -98,6 +88,8 @@
       <updated>1594515738565</updated>
       <workItem from="1594515744658" duration="2877000" />
       <workItem from="1594518644929" duration="12783000" />
+      <workItem from="1594534012441" duration="1605000" />
+      <workItem from="1595080463810" duration="682000" />
     </task>
     <task id="LOCAL-00001" summary="博客">
       <created>1594527737186</created>
@@ -120,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594531145850</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="三维文件">
+      <created>1594534093895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594534093895</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,17 +152,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="博客" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="三维文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="三维文件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="82" y="435" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594530612599">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="82" y="435" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1594530612599" />
-    <state x="588" y="107" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594528594491">
+    <state x="588" y="107" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594534302373">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="588" y="107" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1536.834@0.0.1536.834" timestamp="1594528594491" />
+    <state x="588" y="107" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1536.834@0.0.1536.834" timestamp="1594534302373" />
     <state x="395" y="95" key="#检查" timestamp="1594517828607">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -200,14 +200,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1594518617457" />
-    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1594531234756">
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1594534383050">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1594531234756" />
-    <state x="582" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594531087169">
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1594534383050" />
+    <state x="582" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594534222687">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="582" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1594531087169" />
+    <state x="582" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1594534222687" />
+    <state x="523" y="274" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1594534329635">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="523" y="274" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.834@0.0.1536.834" timestamp="1594534329635" />
     <state x="592" y="311" key="git4idea.ui.GitResetDialog" timestamp="1594529769560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
