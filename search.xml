@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="2021/05/04/hello-world/"/>
+      <url>2021/05/04/hello-world/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows+Ubuntu双系统安装</title>
+      <link href="2020/07/18/Windows-Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+      <url>2020/07/18/Windows-Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><ul><li>Windows10</li><li>U盘≥4G 推荐8G</li><li>Rufus刻录软件 <a href="http://rufus.ie/">http://rufus.ie/</a></li><li>Ubuntu镜像文件(建议20.04) <a href="https://ubuntu.com/#download-content">https://ubuntu.com/#download-content</a></li></ul><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="创建未分配分区"><a href="#创建未分配分区" class="headerlink" title="创建未分配分区"></a>创建未分配分区</h3><span id="more"></span><p>在Win10中打开<code>磁盘管理器</code> 找一个磁盘分区，右键<code>压缩卷</code>压缩一部分空间给Ubuntu使用，建议压缩≥50G出来，压缩出来的硬盘应处于未分配状态。</p><p><img src="D:\xiemei\source\images\WindowsUbuntu\drive.png" alt="1" loading="lazy"></p><h3 id="制作启动盘"><a href="#制作启动盘" class="headerlink" title="制作启动盘"></a>制作启动盘</h3><p>插入U盘，打开<code>Rufus</code>选择镜像位置 其他选项请对照下图 然后点击确定开始制作启动盘</p><p><img src="D:\xiemei\source\images\WindowsUbuntu\Rufus.png" alt="2" loading="lazy"></p><p><img src="D:\xiemei\source\images\WindowsUbuntu\install.png" loading="lazy"></p><h2 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h2><p>从USB启动系统这个相信的大家都会 插入U盘，开机，进入BIOS（我的是按住F2），更改启动引导，将U盘排在第一，退出并保存。<br>出现安装引导界面，可以先选择体验Ubuntu系统，进入桌面后双击左上角Installer，开始安装流程</p><p><img src="D:\xiemei\source\images\WindowsUbuntu\one.png" alt="4" loading="lazy"></p><p><img src="D:\xiemei\source\images\WindowsUbuntu\two.png" alt="5" loading="lazy"></p><p><img src="D:\xiemei\source\images\WindowsUbuntu\three.png" alt="6" loading="lazy"></p><p>然后来到最重要的一步，选择<code>安装类型</code><br>最好<code>不要选择</code>第一项与<code>Windows共存</code>，因为这样系统会自动进行磁盘分区，还需要在Windows下用easyBCD添加引导然后才能启动Windows。<br>所以推荐选<code>其他选项</code>，进行磁盘分区</p><p><img src="D:\xiemei\source\images\WindowsUbuntu\4.jpg" alt="7" loading="lazy"></p><p>选中<code>空闲</code>点击加号，依次添加2个分区：</p><ul><li>/，主分区，Ext4，越多越好</li><li>swap，逻辑分区，交换空间，4G （Linux不会像Windows那样频繁读写虚拟内存所以不需要分太多）</li></ul><p>下边安装启动引导器的设备选择<code>/主分区</code>(/dev/sda3)即可，点击现在安装。</p><p><img src="D:\xiemei\source\images\WindowsUbuntu\5.jpg" alt="8" loading="lazy"></p><p><img src="D:\xiemei\source\images\WindowsUbuntu\6.jpg" alt="9" loading="lazy"></p><h2 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h2><p>到此大功告成 等待5-10分钟即可安装完成</p><p><img src="D:\xiemei\source\images\WindowsUbuntu\7.jpg" alt="10" loading="lazy"></p><p><img src="D:\xiemei\source\images\WindowsUbuntu\8.jpg" alt="11" loading="lazy"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 经验教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> ubuntu </tag>
+            
+            <tag> windows </tag>
+            
+            <tag> 双系统 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【转】三维文件格式知多少</title>
+      <link href="2020/07/12/%E3%80%90%E8%BD%AC%E3%80%91%E4%B8%89%E7%BB%B4%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E7%9F%A5%E5%A4%9A%E5%B0%91/"/>
+      <url>2020/07/12/%E3%80%90%E8%BD%AC%E3%80%91%E4%B8%89%E7%BB%B4%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E7%9F%A5%E5%A4%9A%E5%B0%91/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p>三维文件格式知多少 | abc、glTF、fbx、obj、dae、stl、3ds…</p><blockquote><p>文章来源: 饼干教育<br>原文链接: <a href="https://www.bgteach.com/article/132">https://www.bgteach.com/article/132</a></p></blockquote><span id="more"></span><p><img src="https://www.bgteach.com/files/default/2018/03-18/114429d5296e001135.png" alt="三维文件格式" loading="lazy"></p><p>三维软件之间互相导入导出一般会涉及到一些格式不兼容的问题，这里就给大家普及一下这些常用的三维文件格式。不同的格式有着不同的定位及用处，有开源的也有商业的。目前很多三维软件之间互导迫在眉睫，无论是使用什么三维软件确保文件能够在多个软件之间链接成为了必须马上解决的事情。</p><h2 id="abc"><a href="#abc" class="headerlink" title=".abc"></a>.abc</h2><p><img src="https://www.bgteach.com/files/default/2018/03-18/11444087db5d955172.png" alt=".abc" loading="lazy"></p><p>特效工作室：ILM、Sony Pictures 与 Imageworks, 共同开发了一个开放源码系统，目标是解决特效界共同的问题, 如何可以共享复杂的动态场景, 跨越不同的软体之间， 这个格式命名为 Alembic，英文直译为蒸馏机。本质上就是一个 CG 交换格式, 专注于有效地储存, 共享动画与特效场景, 跨越不同的应用程式或是软体, 包含了商业贩售的软体或是公司内部开发的软体, 客制化的工具组。详情：<a href="https://www.bgteach.com/article/131">《为什么 CG 行业需要 Alembic（.abc） 通用格式》</a>。</p><blockquote><p><strong>.abc 格式，中文名称：蒸馏机 - 支持动画、粒子等！</strong>bake 三维场景的模型、流体、动画、特效等数据，输出输入到其他三维软件。注意是 bake（烘焙），有可能在导入其他三维软件中无法再二次编辑，比如：Rig、流体烟雾模拟等。不必多说，ABC 将会是三维软件交互的王者。</p></blockquote><h2 id="glTF"><a href="#glTF" class="headerlink" title=".glTF"></a>.glTF</h2><p><img src="https://www.bgteach.com/files/default/2018/09-09/0742571b5068052834.png" alt=".glTF" loading="lazy"></p><p>glTF 是一种可以减少 3D 格式中与渲染无关的冗余数据并且在更加适合 OpenGL 簇加载的一种 3D 文件格式。glTF 的提出是源自于 3D 工业和媒体发展的过程中，对 3D 格式统一化的急迫需求。如果用一句话来描述：glTF 就是三维文件的 JPEG ，三维格式的 MP3。在没有 glTF 的时候，大家都要花很长的的时间来处理模型的载入。很多的游戏引擎或者工控渲染引擎，都使用的是插件的方式来载入各种格式的模型。可是，各种格式的模型都包含了很多无关的信息。就 glTF 格式而言，虽然以前有很多 3D 格式，但是各种 3D 模型渲染程序都要处理很多种的格式。对于那些对载入格式不是那么重要的软件，可以显著减少代码量，所以也有人说，最大的受益者是那些对程序大小敏感的 3D Web 渲染引擎，只需要很少的代码就可以顺利地载入各种模型了。此外，glTF 是对近二十年来各种 3D 格式的总结，使用最优的数据结构，来保证最大的兼容性以及可伸缩性。这就好比是本世纪初 xml 的提出。glTF 使用 json 格式进行描述，也可以编译成二进制的内容：bglTF。glTF 可以包括场景、摄像机、动画等，也可以包括网格、材质、纹理，甚至包括了渲染技术（technique）、着色器以及着色器程序。同时由于 json 格式的特点，它支持预留一般以及特定供应商的扩展。</p><blockquote><p><strong>.glTF 格式， - 支持动画等！</strong>.gITF 2.0 格式逐步的完成了 WebGL 的布局，也成为了这个领域的专用格式，随着发展游戏领域的应用也会越来越广泛。官网细节：<a href="https://www.khronos.org/gltf/">gltf</a></p></blockquote><h2 id="fbx"><a href="#fbx" class="headerlink" title=".fbx"></a>.fbx</h2><p><img src="https://www.bgteach.com/files/default/2018/03-18/11445136fd6f467076.png" alt=".fbx" loading="lazy"></p><p>FBX 是 FilmBoX 这套软件所使用的格式，后改称 Motionbuilder。因为 Motionbuilder 扮演的是动作制作的平台，所以在前端的 modeling 和后端的 rendering 也都有赖于其它软件的配合，所以 Motionbuilder 在档案的转换上自然下了一番功夫。FBX 最大的用途是用在诸如在 Max、Maya、Softimage 等软件间进行模型、材质、动作和摄影机信息的互导，这样就可以发挥 Max 和 Maya 等软件的优势。可以说，FBX 方案是非常好的互导方案。</p><blockquote><p><strong>.fbx 格式，Autodesk 家族格式 - 支持动画！</strong>这是一个商业的格式，兼容最好的当属 Autodesk 家族的软件了。fbx 也开放给了第三方软件，但总是感觉除了他自己的软件之外或多或少的都有解决不完的问题。 毋庸置疑，FBX 现在是最受欢迎的格式。</p></blockquote><h2 id="bvh"><a href="#bvh" class="headerlink" title=".bvh"></a>.bvh</h2><p><img src="https://www.bgteach.com/files/default/2018/03-18/114500c52b74762351.png" alt=".bvh" loading="lazy"></p><p>BVH 是 BioVision 等设备对人体运动进行捕获后产生文件格式的文件扩展名。BVH 文件包含角色的骨骼和肢体关节旋转数据。BVH 是一种通用的人体特征动画文件格式,，广泛地被当今流行的各种动画制作软件支持。通常可从记录人类行为运动的运动捕获硬件获得。</p><blockquote><p><strong>.bvh 格式，动作捕捉通用格式 - 骨骼动画数据！</strong>捕捉后的文件可以重复利用，应用在不同的角色骨骼驱动上制作动画。制作游戏、影视等方面的应用广泛。</p></blockquote><h2 id="obj"><a href="#obj" class="headerlink" title=".obj"></a>.obj</h2><p><img src="https://www.bgteach.com/files/default/2018/03-18/114514a82865498230.png" alt=".obj" loading="lazy"></p><p>OBJ 文件是 Alias|Wavefront 公司为它的一套基于工作站的 3D 建模和动画软件 “Advanced Visualizer” 开发的一种标准 3D 模型文件格式，很适合用于 3D 软件模型之间的互导。目前几乎所有知名的 3D 软件都支持 OBJ 文件的读写。OBJ 文件是一种文本文件，可以直接用写字板打开进行查看和编辑修改。</p><blockquote><p><strong>.obj 格式，静态多边形模型 - 附带 UV 信息及材质路径！</strong>不包含动画、材质特性、贴图路径、动力学、粒子等信息。主要支持多边形(Polygons)模型。是最受欢迎的格式。</p></blockquote><h2 id="dae"><a href="#dae" class="headerlink" title=".dae"></a>.dae</h2><p><img src="https://www.bgteach.com/files/default/2018/03-18/1145266addf8983345.png" alt=".dae" loading="lazy"></p><p>DAE 是纯文本的模型格式，其本质就是一个单纯的 xml 文件。相比 fbx，对 dae 格式模型的载入我们拥有非常高的自由控制，这也是最复杂的地方。基本上，dae 文件内一开始就把数据分成了好几大块。对我们来说最为有用的是 VisualScenes（包含场景骨骼节点树）、Nodes（与 VisualScenes 类似，两者或互为补充）、Geometries（网格数据）、Materials/Effects/Images（材质相关信息）、Controllers（骨骼信息数据）、Animations（动画数据）、AnimationClips（全局的动画信息），其中静态模型一般也就包括 VisualScenes 和 Geometries。</p><blockquote><p><strong>.dae 格式，FBX 的代替品 - Collada DAE 需要自行下载安装！</strong>Google 地图便是使用的 DAE 格式。</p></blockquote><h2 id="stl"><a href="#stl" class="headerlink" title=".stl"></a>.stl</h2><p><img src="https://www.bgteach.com/files/default/2018/03-18/1145360eee9f475288.png" alt=".stl" loading="lazy"></p><p>STL 文件是在计算机图形应用系统中，用于表示三角形网格的一种文件格式。 它的文件格式非常简单， 应用很广泛。STL 是最多快速原型系统所应用的标准文件类型。STL 是用三角网格来表现 3D CAD 模型。在 STL 文件中的三角面片的信息单元 facet 是一个带矢量方向的三角面片，STL 三维模型就是由一系列这样的三角面片构成。</p><blockquote><p><strong>.stl 格式，三维打印的通用格式 - 三角面静态模型！</strong>文件格式简单，只能描述三维物体的几何信息，不支持颜色材质等信息，是计算机图形学处理 CG、数字几何处理如 CAD、 数字几何工业应用, 如三维打印机支持的最常见文件格式。</p></blockquote><h2 id="3ds"><a href="#3ds" class="headerlink" title=".3ds"></a>.3ds</h2><p><img src="https://www.bgteach.com/files/default/2018/03-18/114546a9a49f595890.png" alt=".3ds" loading="lazy"></p><p>3DS 文件越来越不受欢迎了。比较早的一种三维格式，三角面，最早游戏模型应用比较广泛。由于后期导入软件的不可编辑性、难以二次编辑现在逐渐的远离了我们的视线。</p><blockquote><p><strong>.3ds 格式 - 三角面静态模型！</strong>文件格式简单，现在几乎都以淘汰！应该在一些老的项目应用上才有可能会用到。</p></blockquote><h2 id="ply"><a href="#ply" class="headerlink" title=".ply"></a>.ply</h2><p><img src="https://www.bgteach.com/files/default/2018/03-18/1145575b21fa470396.png" alt=".ply" loading="lazy"></p><p>PLY 是一种电脑档案格式，全名为多边形档案（Polygon File Format）或 斯坦福三角形档案（Stanford Triangle Format）。该格式主要用以储存立体扫描结果的三维数值，透过多边形片面的集合描述三维物体，与其他格式相较之下这是较为简单的方法。它可以储存的资讯包含颜色、透明度、表面法向量、材质座标与资料可信度，并能对多边形的正反两面设定不同的属性。在档案内容的储存上 PLY 有两种版本，分别是纯文字（ASCII）版本与二元码（binary）版本，其差异在储存时是否以 ASCII 编码表示元素资讯。</p><blockquote><p><strong>.ply 格式 - 静态多边形模型 - OBJ 格式的升级版！</strong>PLY 格式受 Wavefront .obj 格式的启发，但改进了 Obj 格式所缺少的对任意属性及群组的扩充性。因此 PLY 格式发明了 “property” 及 “element” 这两个关键词，来概括“顶点、面、相关资讯、群组”的概念。</p></blockquote><h2 id="psk"><a href="#psk" class="headerlink" title=".psk"></a>.psk</h2><p><img src="https://www.bgteach.com/files/default/2018/03-18/11460910d7f7986951.png" alt=".psk" loading="lazy"></p><p>Psk 是 Epic Games Unreal Engine 的格式，也就是大名鼎鼎的虚幻游戏引擎的模型格式。虚幻游戏模型提取出来的就是 psk 格式。</p><blockquote><p><strong>.psk 格式 - Unral Engine 格式 - 带骨骼动画的模型！</strong>psk 是 一个比较特殊的格式，通常情况下是原来提取游戏模型使用的。最终生成的基于虚幻引擎的游戏打包成这个格式的模型。</p></blockquote><h2 id="x3d"><a href="#x3d" class="headerlink" title=".x3d"></a>.x3d</h2><p><img src="https://www.bgteach.com/files/default/2018/03-18/1146179584a6032575.png" alt=".x3d" loading="lazy"></p><p>X3D 是一种专为万维网而设计的三维图像标记语言。全称可扩展三维（语言），是由 Web3D 联盟设计的，是 VRML 标准的最新的升级版本。 X3D 基于 XML 格式开发，所以可以直接使用 XML DOM 文档树、XML Schema 校验等技术和相关的 XML 编辑工具。目前 X3D 已经是通过 ISO 认证的国际标准。</p><blockquote><p><strong>.x3d 格式 - Web3D 使用较多的格式 - 少量动画 WebGL 支持！</strong>支持多纹理和多遍绘制、支持 Shader 着色、支持多渲染目标(MRT)、支持几何实例(Geometry Instance)。<br>原文为（.ply 格式 - Web3D 使用较多的格式 - 少量动画 WebGL 支持！）可能是笔误。</p></blockquote><h2 id="dxf"><a href="#dxf" class="headerlink" title=".dxf"></a>.dxf</h2><p><img src="https://www.bgteach.com/files/default/2018/03-18/114626293a82249941.png" alt=".dxf" loading="lazy"></p><p>DXF 是一种开放的矢量数据格式，可以分为两类：ASCII 格式和二进制格式；ASCII 具有可读性好的特点，但占用的空间较大；二进制格式则占用的空间小、读取速度快。各种 CAD 软件中 DXF 被广泛使用，成为事实上的标准。绝大多数 CAD 系统都能读入或输出 DXF 文件。</p><blockquote><p><strong>.dxf 格式 - Drawing Exchange File - CAD 通用格式！</strong>一般都是 CAD 矢量数据的交互格式。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 邪魅的小安利 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 3D </tag>
+            
+            <tag> 分享 </tag>
+            
+            <tag> 转载 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mysql优化修复表数据库</title>
+      <link href="2020/07/12/mysql%E4%BC%98%E5%8C%96%E4%BF%AE%E5%A4%8D%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <url>2020/07/12/mysql%E4%BC%98%E5%8C%96%E4%BF%AE%E5%A4%8D%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p>OPTIMIZE TABLE <code>table_name</code> 优化表</p><span id="more"></span><hr><h6 id=""><a href="#" class="headerlink" title=""></a></h6><p>OPTIMIZE [LOCAL | NO_WRITE_TO_BINLOG] TABLEtbl_name[,tbl_name] … </p><p>OPTIMIZE TABLE 用于回收闲置的数据库空间，当表上的数据行被删除时，所占据的磁盘空间并没有立即被回收，使用了OPTIMIZE TABLE命令后这些空间将被回收，并且对磁盘上的数据行进行重排（注意：是磁盘上，而非数据库）。</p><p>REPAIR TABLE <code>table_name</code> 修复表</p><p>数据库运行时间过长可能会因为硬盘坏道，死机等众多因素造成数据损坏，可以使用此命令进行修复 </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 经验教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ubuntu更换国内镜像源 确保服务器更新升级软件稳定</title>
+      <link href="2020/07/12/%E7%A1%AE%E4%BF%9D%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%96%B0%E5%8D%87%E7%BA%A7%E8%BD%AF%E4%BB%B6%E7%A8%B3%E5%AE%9A/"/>
+      <url>2020/07/12/%E7%A1%AE%E4%BF%9D%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%96%B0%E5%8D%87%E7%BA%A7%E8%BD%AF%E4%BB%B6%E7%A8%B3%E5%AE%9A/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h6 id="一般我们在安装ubuntu之后，尤其是国外的服务器，我们建议安装国内镜像源。在这里，陌涛我也整理到目前国内主流且可用的ubuntu镜像源，如果我们有需要使用的可以选择替代。"><a href="#一般我们在安装ubuntu之后，尤其是国外的服务器，我们建议安装国内镜像源。在这里，陌涛我也整理到目前国内主流且可用的ubuntu镜像源，如果我们有需要使用的可以选择替代。" class="headerlink" title="一般我们在安装ubuntu之后，尤其是国外的服务器，我们建议安装国内镜像源。在这里，陌涛我也整理到目前国内主流且可用的ubuntu镜像源，如果我们有需要使用的可以选择替代。"></a>一般我们在安装ubuntu之后，尤其是国外的服务器，我们建议安装国内镜像源。在这里，陌涛我也整理到目前国内主流且可用的ubuntu镜像源，如果我们有需要使用的可以选择替代。</h6><h2 id="第一、目前可选国内ubuntu源"><a href="#第一、目前可选国内ubuntu源" class="headerlink" title="第一、目前可选国内ubuntu源"></a>第一、目前可选国内ubuntu源</h2><span id="more"></span><p><a href="https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/">清华大学镜像源</a></p><pre><code> deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</code></pre><p> 阿里云镜像源 ubuntu 18.04(bionic) <a href="https://developer.aliyun.com/mirror/ubuntu">其他版本</a></p><pre><code>   deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse   deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse   deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse   deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse   deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse   deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse   deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse   deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse   deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse   deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</code></pre><p>腾讯云</p><pre><code>   deb http://mirrors.cloud.tencent.com/ubuntu/ bionic main universe restricted multiverse   deb http://mirrors.cloud.tencent.com/ubuntu/ bionic-security main universe restricted multiverse   deb http://mirrors.cloud.tencent.com/ubuntu/ bionic-updates main universe restricted multiverse   deb http://mirrors.cloud.tencent.com/ubuntu/ bionic-backports main universe restricted multiverse   deb-src http://mirrors.cloud.tencent.com/ubuntu/ bionic main universe restricted multiverse   deb-src http://mirrors.cloud.tencent.com/ubuntu/ bionic-security main universe restricted multiverse   deb-src http://mirrors.cloud.tencent.com/ubuntu/ bionic-updates main universe restricted multiverse   deb-src http://mirrors.cloud.tencent.com/ubuntu/ bionic-backports main universe restricted multiverse</code></pre><h2 id="第二、如何替换Ubuntu源镜像"><a href="#第二、如何替换Ubuntu源镜像" class="headerlink" title="第二、如何替换Ubuntu源镜像"></a>第二、如何替换Ubuntu源镜像</h2><p>这里我们可以通过下面办法替换源镜像。</p><p>1、备份已有源</p><pre><code>    cp /etc/apt/sources.list /etc/apt/sources.list.bak</code></pre><p>2、编辑源文件</p><pre><code> /etc/apt/sources.list</code></pre><p>然后上上面我们选择的源替换即可。</p><p>3、更新系统</p><pre><code> apt update -y</code></pre><p>更新Ubuntu系统，反馈到更新正常没有错误就说明正常替换到国内源镜像，如果有错误需要单独解决。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 经验福利 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ubuntu </tag>
+            
+            <tag> mirrors </tag>
+            
+            <tag> com </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我听说</title>
+      <link href="2020/07/12/%E6%88%91%E5%90%AC%E8%AF%B4/"/>
+      <url>2020/07/12/%E6%88%91%E5%90%AC%E8%AF%B4/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><img src="https://www.xiemei.xyz/images/wotingshuo.jpg" alt="img" loading="lazy"></p><hr><p>　　我听说，有一种猫叫做雨猫。天气温暖时，它就变得蓬松毛绒绒的，像白云一样上浮，你可以拴着它，像放风筝一样走，它会变透明，阳光透得过它的身体。天气晦暗时它会变黑，坠在地上，满地乱跑，毛变得硬硬的，像刚刮过的胡茬一样。你得抱着它，等天气晴朗时，再把它放出去，就像风筝末梢放着一团棉花糖。</p><hr><p>　　我听说，有种青蛙，透明洁白，只吃茶叶。吃多之后，吐气如兰。冬天它便僵卧，张着大嘴，眠去一个季节。你往它肚里倒热水，水便成茶，馥郁芳香，可以倒在杯子里喝，香沁肺腑。有个女孩子，手头没有杯子，于是捧起青蛙，嘴对着嘴，把青蛙嘴当茶杯口。结果青蛙醒了，变成一白衣少年：“哪个公主吻了我？”</p><span id="more"></span><hr><p>　　我听说，有一种驯鹿，很爱长颈鹿的斑纹和气味，但是太矮，又碍于长颈鹿是哑巴，所以没法谈恋爱。于是它们就长起了杉树一样直拔云天的角，然后到处找一个人，在角的顶端造一个房子住着。每天，那个人负责在高树摘果子，送给长颈鹿吃，以促成驯鹿和长颈鹿的爱情——虽然见不到面，但灵魂相通的爱情。</p><hr><p>　　我听说，北方有一种松鼠，特别大，毛茸茸的，睡觉时喜欢摊开四肢，露出软绵绵的肚皮。你抓住一只，混熟了，就可以把它当床，睡在它的肚子上，用它的尾巴做被子。但它喜欢梦游，到处爬，所以你睡着前眼睛明明看见天花板的花纹，醒来时就可能看见松树枝、杉树枝、云、麻雀和松毛虫。</p><hr><p>　　我听说，有一种猫，特别怕冷，一遇到冷环境就全身长起蓬松松软绵绵的长毛，并且开始冬眠，怎么叫都不醒。冬天你把它挂在脖子上出门，就好像穿了件毛大衣。到了温暖的室内，它暖醒了，就喵一声跳下来，自己到炉子旁边去接着睡了。因为冬天很长，它在冬天基本是裘状，所以叫冬裘夏猫。</p><hr><p>　　我听说，有种野猪，睡一觉就长一层脂肪，起来跑一跑就练出一层肌肉，所以他身上肥瘦肥瘦，像夹心饼干。他爱去南方的海边泡澡，泡一身大粒子盐味，吹风，然后哼唧哼唧去温泉，一边蒸自己一边吃树叶子。你埋伏在温泉边，射倒它，能吃到现成的蒸火腿。你最好带蜂蜜，敷一遍再蒸，更好吃。</p><hr><p>　　我听说，以前有人喜欢在海蚌上写故事写诗。你走在海边，海蚌会跟你说：我身上有字，可以给你看噢，但有个条件，我不识字，你得念给我听。你答应了，海蚌就张开壳来，让你给它念故事。如果你看入神忘了继续念，或者企图摘抄剽窃，海蚌就会夹你一下；如果你念得好，海蚌就送你颗珍珠。</p><hr><p>　　我听说，南方有一种鸟，身材纤瘦，尾羽很长，善吟诗，平时看上去盈盈一握，却筋骨健壮。如果你和它混熟了，它就会把身体绷直，你可以握着它的腰，用它的嘴蘸墨、写字，画梅花、打印章时，还可以用它印个浅爪痕。可是它挑剔得很，墨质差，纸脏，字写得难看，或者句子毫无文采，它就会破口大骂：“居然用老娘写这么烂的文章！”</p><hr><p>我听说有种雪狐，极妩媚，皮毛柔滑。善学声音，爱恶作剧，喜在窗外学男主人女同学、女同事等声音，引女主人疑心吵架，引以为乐。被抓住后会要求：给你雪狐裘，放我走吧。若男主人不允，她便媚笑：原来是你舍不得我走啊嗯……女主人遂朝男主人双目圆睁：你留她干嘛，还不放走？心思又活络了嗯？！</p><hr><p>　　我听说，有种熊叫做云熊，其白如雪，其大若垂天之云。春天开始浮游，夏天吸取阳光。冬天，它随风在天空飘荡，到一个寒冷的地方，就开始下一团团的熊绒毛。熊绒可做大衣，闻得到夏天阳光的味道。熊绒落完，它也就飘下地来。你闻以蜂蜜，冬眠。到春天它长起了毛，就又变成云浮起来了。</p><hr><p>　　我听说有种蜗牛，寿命很长，以八千岁为春，以八千岁为秋。丈夫对妻子说，我要吻你一下，然后出门去买报纸。妻子就闭上眼，等了八天，吻到了，于是丈夫出门了。等他回来，妻子抱怨说：你这一走就是六百年，我好担心。丈夫说：哎呀，我是怕又过时了，站在那里花二百年把新闻看了嘛。</p><hr><p>　　我听说有种章鱼，善于下厨。你坐柜台后面，问它要三明治寿司刺身铁板烧咖啡茶涮锅烤串回锅肉，它舞起手臂们，切剔炒烹翻炸调撒料颠勺，又快又好，还能剩出三只手，一只负责收钱，两只和你打扑克解闷。但它开不起玩笑，偶尔它不小心手臂被铁板烫到，你可不能说“那我要这条章鱼烧！” 不然它就会舞起锅铲，任你是三头六臂也挡不住它四面八方朝你扔鱼丸。</p><hr><p>　　我听说有种虎鲸，很温柔，喜欢光，不潜游，但又怕晒。你在它背上铺沙子，张阳伞，它便喜欢你，任你在它背上住下，钓鱼、睡午觉、接吻、喝果汁。每天它张嘴吞许多小鱼，自己吃些，剩下的喷水送给你，于是你天天有新鲜刺身吃。偶然它也馋，愿意吃熟的，就会张嘴，要你抛给吃章鱼烧</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 我听说 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux查看硬件信息</title>
+      <link href="2020/04/18/%E6%88%91Linux%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/"/>
+      <url>2020/04/18/%E6%88%91Linux%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h5 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h5><pre><code># uname -a               # 查看内核/操作系统/CPU信息# head -n 1 /etc/issue   # 查看操作系统版本# cat /proc/cpuinfo      # 查看CPU信息# hostname               # 查看计算机名# lspci -tv              # 列出所有PCI设备（yum install pciutils）# lsusb -tv              # 列出所有USB设备# lsmod                  # 列出加载的内核模块# env                    # 查看环境变量</code></pre><span id="more"></span><h5 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h5><pre><code># free -m                # 查看内存使用量和交换区使用量# df -h                  # 查看各分区使用情况# du -sh &lt;目录名&gt;        # 查看指定目录的大小# grep MemTotal /proc/meminfo   # 查看内存总量# grep MemFree /proc/meminfo    # 查看空闲内存量# uptime                 # 查看系统运行时间、用户数、负载# cat /proc/loadavg      # 查看系统负载</code></pre><h5 id="磁盘和分区"><a href="#磁盘和分区" class="headerlink" title="磁盘和分区"></a>磁盘和分区</h5><pre><code># mount | column -t      # 查看挂接的分区状态# fdisk -l               # 查看所有分区# swapon -s              # 查看所有交换分区# hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)# dmesg | grep IDE       # 查看启动时IDE设备检测状况</code></pre><h5 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h5><pre><code># ifconfig               # 查看所有网络接口的属性# iptables -L            # 查看防火墙设置# route -n               # 查看路由表# netstat -lntp          # 查看所有监听端口# netstat -antp          # 查看所有已经建立的连接# netstat -s             # 查看网络统计信息# ifconfig               # 查看所有网络接口的属性# iptables -L            # 查看防火墙设置# route -n               # 查看路由表# netstat -lntp          # 查看所有监听端口# netstat -antp          # 查看所有已经建立的连接# netstat -s             # 查看网络统计信息</code></pre><h5 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h5><pre><code># ps -ef                 # 查看所有进程# top                    # 实时显示进程状态</code></pre><h5 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h5><pre><code># w                      # 查看活动用户# id &lt;用户名&gt;            # 查看指定用户信息# last                   # 查看用户登录日志# cut -d: -f1 /etc/passwd   # 查看系统所有用户# cut -d: -f1 /etc/group    # 查看系统所有组# crontab -l             # 查看当前用户的计划任务</code></pre><h5 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h5><pre><code># chkconfig --list       # 列出所有系统服务# chkconfig --list | grep on    # 列出所有启动的系统服务</code></pre><h5 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h5><pre><code># rpm -qa                # 查看所有安装的软件包</code></pre><h5 id="查看网卡型号"><a href="#查看网卡型号" class="headerlink" title="查看网卡型号"></a>查看网卡型号</h5><pre><code># lspci | grep Ethernet</code></pre><h5 id="查看内存和cpu最直接最常用的命令"><a href="#查看内存和cpu最直接最常用的命令" class="headerlink" title="查看内存和cpu最直接最常用的命令"></a>查看内存和cpu最直接最常用的命令</h5><pre><code># free# cat /proc/cpuinfo</code></pre><h5 id="查看硬盘信息（查看硬盘型号和硬盘序列号）"><a href="#查看硬盘信息（查看硬盘型号和硬盘序列号）" class="headerlink" title="查看硬盘信息（查看硬盘型号和硬盘序列号）"></a>查看硬盘信息（查看硬盘型号和硬盘序列号）</h5><pre><code># df -h</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 经验教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux下安装Git</title>
+      <link href="2020/04/08/%E6%88%91Linux%E4%B8%8B%E5%AE%89%E8%A3%85Git/"/>
+      <url>2020/04/08/%E6%88%91Linux%E4%B8%8B%E5%AE%89%E8%A3%85Git/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h4 id="1、使用yum安装"><a href="#1、使用yum安装" class="headerlink" title="1、使用yum安装"></a>1、使用yum安装</h4><pre><code># yum -y install git# yum remove git</code></pre><span id="more"></span><h4 id="2、源代码安装"><a href="#2、源代码安装" class="headerlink" title="2、源代码安装"></a>2、源代码安装</h4><pre><code>---安装依赖的包# yum -y install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils-MakeMaker zlib# cd /usr/local----下载git源码# wget https://github.com/git/git/archive/v2.21.0.tar.gz----解压git源码# tar -zxvf v2.21.0.tar.gz# cd git-2.21.0/# mkdir /usr/local/git----编译安装到指定目录# make prefix=/usr/local/git all# sudo make prefix=/usr/local/git install# vim /etc/profile----添加在文件的最后一行export PATH=/usr/local/git/bin:$PATH# source /etc/profile# git --version</code></pre><h4 id="3、FAQ"><a href="#3、FAQ" class="headerlink" title="3、FAQ"></a>3、FAQ</h4><h6 id="1、-如果解压时出现报错，建议手动下载git源码包然后上传到服务器"><a href="#1、-如果解压时出现报错，建议手动下载git源码包然后上传到服务器" class="headerlink" title="1、 如果解压时出现报错，建议手动下载git源码包然后上传到服务器"></a>1、 如果解压时出现报错，建议手动下载git源码包然后上传到服务器</h6><pre><code>gzip: stdin: unexpected end of filetar: Unexpected EOF in archivetar: Unexpected EOF in archivetar: Error is not recoverable: exiting now</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
