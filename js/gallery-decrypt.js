@@ -1,15 +1,22 @@
+/**
+ * 解密
+ * @param {string} text
+ * @param {string} password
+ * @returns
+ */
 function decrypt(text, password) {
   return CryptoJS.AES.decrypt(text, password).toString(CryptoJS.enc.Utf8);
 }
+
+/**
+ * 解密所有相册
+ */
 function decryptAll() {
   const password = document.getElementById("decrypt-password").value;
   if (password) {
     const photos = document.querySelectorAll(".photo-list-item");
     const testSrc = decrypt(photos[0].dataset.src, password);
-    const objExp = new RegExp(
-      /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/
-    );
-    if (objExp.test(testSrc)) {
+    if (testSrc.startsWith("http") || testSrc.startsWith("/")) {
       decryptContainer.style.display = "none";
       lightgallery.style.display = "flex";
       photos.forEach((photo) => {
@@ -31,6 +38,9 @@ function decryptAll() {
   }
 }
 
+/**
+ * 添加解密按钮事件
+ */
 function initGalleryDecrypt() {
   if (decryptButton) {
     decryptButton.onclick = decryptAll;

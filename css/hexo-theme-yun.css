@@ -1,21 +1,17 @@
 :root {
   --hty-primary-color: #0078e7;
-  --hty-inverse-color: #ff8718;
   --hty-success-color: #21ba45;
   --hty-warning-color: #f2711c;
   --hty-danger-color: #db2828;
   --hty-info-color: #42b8dd;
   --hty-link-color: #0078e7;
+  --hty-gray-color: #999;
+  --hty-yellow-color: #ff8718;
 }
 .primary {
   color: #005eb4;
   --blockquote-border-left-color: var(--hty-primary-color);
   --blockquote-bg-color: rgba(0,120,231,0.1);
-}
-.inverse {
-  color: #e46e00;
-  --blockquote-border-left-color: var(--hty-inverse-color);
-  --blockquote-bg-color: rgba(255,135,24,0.1);
 }
 .success {
   color: #198f35;
@@ -41,6 +37,24 @@
   color: #005eb4;
   --blockquote-border-left-color: var(--hty-link-color);
   --blockquote-bg-color: rgba(0,120,231,0.1);
+}
+.gray {
+  color: #808080;
+  --blockquote-border-left-color: var(--hty-gray-color);
+  --blockquote-bg-color: rgba(153,153,153,0.1);
+}
+.yellow {
+  color: #e46e00;
+  --blockquote-border-left-color: var(--hty-yellow-color);
+  --blockquote-bg-color: rgba(255,135,24,0.1);
+}
+:root {
+  --hty-mode: 'light';
+  --hty-bg-color: #f5f5f5;
+  --hty-text-color: #333;
+  --hty-secondary-text-color: #555;
+  --post-block-bg-color: #fff;
+  --smc-link-color: #0078e7;
 }
 .disable-hover,
 .disable-hover * {
@@ -77,12 +91,6 @@
   to {
     opacity: 1;
   }
-}
-.text-center {
-  text-align: center;
-}
-.text-uppercase {
-  text-transform: uppercase;
 }
 body {
   font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
@@ -168,14 +176,6 @@ details[open] summary {
   border-bottom: 1px solid var(--smc-secondary);
   margin: -1rem -1rem 1rem -1rem;
 }
-:root {
-  --hty-mode: 'light';
-  --hty-bg-color: #f5f5f5;
-  --hty-text-color: #333;
-  --hty-secondary-text-color: #555;
-  --post-block-bg-color: #fff;
-  --smc-link-color: #0078e7;
-}
 html {
   scroll-behavior: smooth;
 }
@@ -254,6 +254,11 @@ input {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+}
+.banner-char-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .vertical-line-top,
 .vertical-line-bottom {
@@ -652,24 +657,6 @@ input {
     transform: scale(1.1);
   }
 }
-.hty-layout-grid {
-  display: grid;
-  box-sizing: border-box;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  margin: auto;
-  padding: 1rem 0;
-}
-.hty-layout-grid__cell {
-  width: 100%;
-  box-sizing: border-box;
-  justify-content: center;
-}
-.hty-layout-grid__cell--span-12 {
-  margin: 0;
-  width: auto;
-  grid-column-end: span 12;
-}
 .link-items {
   display: flex;
   padding: 0 0.5rem;
@@ -735,6 +722,10 @@ input {
 }
 #content {
   overflow: visible;
+}
+#recent-posts {
+  row-gap: 1rem;
+  margin: 1rem 0;
 }
 #page,
 #archive,
@@ -865,6 +856,7 @@ input {
   cursor: default;
 }
 .post-block {
+  color: var(--hty-text-color);
   margin: 0 1rem;
   padding: 1rem;
   background-color: var(--post-block-bg-color);
@@ -1462,6 +1454,13 @@ input {
 .markdown-body blockquote p {
   margin: 0;
 }
+.markdown-body video {
+  width: 100%;
+  max-height: 100vh;
+}
+.markdown-body iframe {
+  border: none;
+}
 .post-nav {
   display: flex;
   justify-content: space-between;
@@ -1928,7 +1927,7 @@ input {
   text-align: center;
   font-size: 1rem;
 }
-#goUp {
+#back-to-top {
   position: relative;
   position: fixed;
   right: -0.9rem;
@@ -1940,11 +1939,11 @@ input {
   transition-duration: 0.3s;
   transition-delay: 0s;
 }
-#goUp.show {
+#back-to-top.show {
   transform: translateX(-30px) rotate(360deg);
   opacity: 1;
 }
-#goUp .icon {
+#back-to-top .icon {
   width: 2.5rem;
   height: 2.5rem;
 }
@@ -2050,6 +2049,10 @@ input {
 #search .icon {
   color: #0078e7;
 }
+#waline {
+  --waline-theme-color: #0078e7;
+  --waline-active-color: rgba(0,120,231,0.8);
+}
 #comment {
   margin: 0 1rem;
   padding: 1rem;
@@ -2095,11 +2098,27 @@ input {
 .hidden {
   display: none;
 }
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.w-full {
+  width: 100%;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --color-mode: 'dark';
   }
   :root:not([data-user-color-scheme]) {
+    --hty-mode: 'dark';
     --hty-bg-color: #303030;
     --hty-text-color: #f2f2f2;
     --hty-secondary-text-color: #eee;
@@ -2128,17 +2147,10 @@ input {
     background-color: rgba(27,31,46,0.95);
     background-image: none;
   }
-  :root:not([data-user-color-scheme]) .post-title-link {
-    color: #3ca1ff;
-  }
   :root:not([data-user-color-scheme]) .post-card {
     color: #fff;
     background-color: rgba(27,31,46,0.9);
     box-shadow: 0 1px 8px rgba(27,31,46,0.1);
-  }
-  :root:not([data-user-color-scheme]) .post-block {
-    color: var(--hty-text-color);
-    background-color: rgba(27,31,46,0.95);
   }
   :root:not([data-user-color-scheme]) .page-number-basic {
     background-color: rgba(0,0,0,0.5);
@@ -2168,14 +2180,12 @@ input {
     background: rgba(227,242,255,0.9);
     cursor: default;
   }
-  :root:not([data-user-color-scheme]) #footer {
-    color: #eee;
-  }
   :root:not([data-user-color-scheme]) .aplayer {
     color: #000;
   }
 }
 [data-user-color-scheme='dark'] {
+  --hty-mode: 'dark';
   --hty-bg-color: #303030;
   --hty-text-color: #f2f2f2;
   --hty-secondary-text-color: #eee;
@@ -2204,17 +2214,10 @@ input {
   background-color: rgba(27,31,46,0.95);
   background-image: none;
 }
-[data-user-color-scheme='dark'] .post-title-link {
-  color: #3ca1ff;
-}
 [data-user-color-scheme='dark'] .post-card {
   color: #fff;
   background-color: rgba(27,31,46,0.9);
   box-shadow: 0 1px 8px rgba(27,31,46,0.1);
-}
-[data-user-color-scheme='dark'] .post-block {
-  color: var(--hty-text-color);
-  background-color: rgba(27,31,46,0.95);
 }
 [data-user-color-scheme='dark'] .page-number-basic {
   background-color: rgba(0,0,0,0.5);
@@ -2243,9 +2246,6 @@ input {
 [data-user-color-scheme='dark'] .pagination .space.current {
   background: rgba(227,242,255,0.9);
   cursor: default;
-}
-[data-user-color-scheme='dark'] #footer {
-  color: #eee;
 }
 [data-user-color-scheme='dark'] .aplayer {
   color: #000;

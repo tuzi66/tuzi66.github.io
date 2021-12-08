@@ -1,5 +1,7 @@
-// @ts-nocheck
-(function() {
+/**
+ * 初始化 LeanCloud Visitors
+ */
+function initLeancloudVisitors() {
   /**
    * @param {*} url
    * @returns {HTMLElement}
@@ -103,4 +105,7 @@
         fetchData("https://" + api_server);
       });
   }
-})();
+}
+
+document.addEventListener("DOMContentLoaded", initLeancloudVisitors);
+document.addEventListener("pjax:success", initLeancloudVisitors);
