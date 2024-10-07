@@ -249,5 +249,8 @@
     <category term="Linux" scheme="http://www.xiemei.xyz/tags/Linux/"/>
     
   </entry>
-  
+  <follow_challenge>
+    <feedId>66041371123328000</feedId>
+    <userId>63169688868513792</userId>
+</follow_challenge>
 </feed>
