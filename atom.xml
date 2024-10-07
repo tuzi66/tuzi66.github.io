@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>邪魅君的小站</title>
-  
+  <follow_challenge>
+    <feedId>66041371123328000</feedId>
+    <userId>63169688868513792</userId>
+</follow_challenge>
   <subtitle>魂归故里 故里是你</subtitle>
   <link href="http://www.xiemei.xyz/atom.xml" rel="self"/>
   
